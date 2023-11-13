@@ -6,13 +6,11 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 22:49:16 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/13 22:50:40 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/13 23:40:56 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-
-int main(void)
+int ft_isascii(int c)
 {
-    
+    return (c >= 0 && c <= 127);
 }
