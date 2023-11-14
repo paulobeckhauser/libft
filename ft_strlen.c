@@ -6,16 +6,18 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 10:25:29 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/14 10:36:22 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/14 16:03:58 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(char *s)
 {
-	unsigned long	i;
+	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
