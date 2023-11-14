@@ -6,13 +6,13 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 10:38:11 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/14 12:54:00 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/14 13:03:11 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, t_size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned long	i;
 	unsigned char	*ptr;
