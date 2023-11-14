@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 23:45:24 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/14 19:09:47 by pabeckha         ###   ########.fr       */
+/*   Created: 2023/11/14 17:07:41 by pabeckha          #+#    #+#             */
+/*   Updated: 2023/11/14 19:09:50 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+{
+	unsigned long		i;
+	unsigned char		*ptr_dest;
+	unsigned const char	*ptr_src;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(char *s);
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
-
-#endif
+	ptr_dest = dst;
+	ptr_src = src;
+	i = 0;
+	while (i < n)
+	{
+		ptr_dest[i] = ptr_src[i];
+		i++;
+	}
+	return (ptr_dest);
+}
