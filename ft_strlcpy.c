@@ -6,12 +6,11 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 08:35:24 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/17 11:51:44 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/17 13:30:05 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 {
@@ -32,14 +31,4 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 	}
 	len = ft_strlen(ptr_src);
 	return (len);
-}
-
-int main(void)
-{
-	char *str = "ERIK";
-	char *str2 = NULL;
-
-	ft_strlcpy(str, str2, 0);
-	printf("%s", str);
-	return (0);
 }
