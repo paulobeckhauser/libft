@@ -6,11 +6,11 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 10:10:02 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/14 10:24:10 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/16 10:24:11 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	return (c >= 32 && c < 126);
+	return (c >= 32 && c <= 126);
 }
