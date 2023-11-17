@@ -6,17 +6,18 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 10:25:29 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/14 16:03:58 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/17 11:55:53 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 
 	i = 0;
+	if (!s || !*s)
 	while (s[i] != '\0')
 	{
 		i++;
