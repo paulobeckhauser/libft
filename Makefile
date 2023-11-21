@@ -19,7 +19,7 @@ $(NAME):	$(OBJ)
 
 test:
 	make
-	cc main.c libft.a
+	cc ../main.c libft.a
 	./a.out
 
 clean:
