@@ -6,7 +6,7 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:18:41 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/15 14:52:28 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/11/21 12:55:55 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,17 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned long	i;
-	char			*string;
+	size_t			i;
+	unsigned char	*string;
 
-	i = 1;
-	string = (char *)s;
-	while (*string != c && i < n)
+	i = 0;
+	string = (unsigned char *)s;
+	c = (unsigned char)c;
+	while (i < n)
 	{
-		string++;
+		if (string[i] == c)
+			return ((void *)&string[i]);
 		i++;
 	}
-	if (*string == c)
-		return (string);
-	else
-		return (NULL);
+	return (NULL);
 }
