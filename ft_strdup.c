@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/15 10:57:25 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/23 22:15:31 by pabeckha         ###   ########.fr       */
+/*   Created: 2023/11/21 18:01:16 by pabeckha          #+#    #+#             */
+/*   Updated: 2023/11/21 18:32:07 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+#include "libft.h"
+
+char	*ft_strdup(const char *s1)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	else
-		return (c);
+	char	*string;
+	size_t	i;
+
+	string = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
+	if (string == NULL)
+		return (NULL);
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		string[i] = s1[i];
+		i++;
+	}
+	string[i] = '\0';
+	return (string);
 }
