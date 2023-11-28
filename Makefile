@@ -79,7 +79,7 @@ fclean:	clean
 
 re: fclean all
 
-bonus: ${OBJ} ${B_OBJ}
+bonus: ${B_OBJ}
 	ar rcs ${NAME} $^
 
 # valgrind: $(VALGRIND) ./$(name)
