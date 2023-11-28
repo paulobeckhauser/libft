@@ -72,7 +72,7 @@ $(NAME):	$(OBJ)
 # 	./a.out
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(B_OBJ)
 
 fclean:	clean
 	$(RM) $(NAME)
