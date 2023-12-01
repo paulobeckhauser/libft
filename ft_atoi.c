@@ -6,11 +6,11 @@
 /*   By: pabeckha <pabeckha@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 20:52:15 by pabeckha          #+#    #+#             */
-/*   Updated: 2023/11/16 13:42:01 by pabeckha         ###   ########.fr       */
+/*   Updated: 2023/12/01 14:14:21 by pabeckha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	nb_definition(const char *str, int i, int nb);
+static int	nb_definition(const char *str, int i, int nb);
 
 int	ft_atoi(const char *str)
 {
@@ -41,7 +41,7 @@ int	ft_atoi(const char *str)
 		return (0);
 }
 
-int	nb_definition(const char *str, int i, int nb)
+static int	nb_definition(const char *str, int i, int nb)
 {
 	while (str[i] >= '0' && str[i] <= '9')
 	{
