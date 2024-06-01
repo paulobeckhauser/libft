@@ -113,7 +113,11 @@ clean:
 				@$(RM) .cache_exists
 
 fclean:			clean
+<<<<<<< HEAD
 				@$(RM) $(NAME)
+=======
+				$(RM) $(NAME)
+>>>>>>> origin/main
 
 re: 			fclean all
 
