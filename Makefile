@@ -70,6 +70,7 @@ FT_STR_DIR := 	$(SRC_DIR)ft_str/ft_split.c \
 				$(SRC_DIR)ft_str/ft_strlcpy.c \
 				$(SRC_DIR)ft_str/ft_strlen.c \
 				$(SRC_DIR)ft_str/ft_strmapi.c \
+				$(SRC_DIR)ft_str/ft_strcmp.c \
 				$(SRC_DIR)ft_str/ft_strncmp.c \
 				$(SRC_DIR)ft_str/ft_strnstr.c \
 				$(SRC_DIR)ft_str/ft_strrchr.c \
@@ -113,11 +114,7 @@ clean:
 				@$(RM) .cache_exists
 
 fclean:			clean
-<<<<<<< HEAD
 				@$(RM) $(NAME)
-=======
-				$(RM) $(NAME)
->>>>>>> origin/main
 
 re: 			fclean all
 
